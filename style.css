@@ -1,0 +1,69 @@
+html, body {
+
+  margin: 0;
+
+  padding: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background: #000;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  overflow: hidden;
+
+}
+
+#texto {
+
+  font-size: 3em;
+
+  font-weight: bold;
+
+  text-align: center;
+
+  color: white;
+
+  transition: color 0.4s ease, transform 0.3s ease;
+
+  text-shadow: 0 0 15px rgba(255, 105, 180, 0.9);
+
+}
+
+.corazon {
+
+  position: fixed;
+
+  font-size: 24px;
+
+  animation: flotar 1.5s ease forwards;
+
+  pointer-events: none;
+
+}
+
+@keyframes flotar {
+
+  0% {
+
+    opacity: 1;
+
+    transform: translateY(0) scale(1);
+
+  }
+
+  100% {
+
+    opacity: 0;
+
+    transform: translateY(-80px) scale(1.5);
+
+  }
+
+}
